@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div class="top">
+    <button onclick="togglePopup()">Add Employee</button>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>EmployeeID</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Company Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+
+
+    </tbody>
+</table>
+
+
+<div class="popup"  style="display: none" >
+    <form class="popup-body" id="form">
+        <span class="close" onclick="togglePopup()">&times;</span>
+       <input type="text" value="dheeraj" name="name" placeholder="Employee Name" required>
+       <!-- <label> -->
+       <select name="role" required>
+                <option value="QA">QA</option>
+                <option value="SDE">SDE</option>
+                <option value="Product">Product Manager</option>
+       </select>
+       <!-- </label> -->
+       <input type="number" value="3333" name="Salary" placeholder="Salary" required>
+       <input type="text" value="345345345" name="phoneNumber" placeholder="Phone Number" required>
+       <input type="email" value="d@sdf.sdf" name="email" placeholder="email" required>
+       <input type="text" value="dheeraj" name="CompanyName" placeholder="CompanyName" required>
+        
+       <button>Add Employee</button>
+    </form>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.id { 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top { 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table { 
+    width: 100%;
+    margin-top: 20px;
+    border-collapse:collapse ;
+}
+
+.table td, .table th { 
+    border: 1px solid black;
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+.popup { 
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(12, 1, 1, 0.448);
+    padding: 10px;
+    /* display: none;  as inline is more peroites so not nesseary here*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popup > .popup-body { 
+    padding: 20px;
+    border-radius: 10px ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    position: relative;
+
+}
+
+.popup .close {
+     position:absolute;
+     top: 2px;
+     right: 10px;
+     cursor: pointer;
+}
+
+td:last-child{ 
+   
+        display: flex;
+        justify-content: space-evenly;
+}
+td:last-child >  button { 
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 4px 0 ;
+
+    background-color: transparent;
+}
+
+
+
